@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+background-color: #f1f1f1;
+}
+
+.contato-pai{
+    display: flex; 
+    justify-content: flex-end;  /* Alinha o conteúdo à direita */
+    align-items: flex-start;    /* Alinha o conteúdo no topo */
+    width: 100%;
+}
+
+
+.contato{
+ display: flex;
+ margin-top: 2%; /* Ajuste a distância do topo */
+ margin-right: 8%; /* Ajuste a distância da direita */
+ gap: 3%;
+}
+
+.contato a{
+ 
+ margin: 5%;
+ color: rgb(0, 0, 0);
+ text-decoration: none;
+ font-size: 20px;
+ 
+}
+.contato .sobre, a:hover{
+color: rgb(126, 123, 123);
+text-decoration:underline;
+}
+
+.container-titulo{
+    display: flex;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 3%;
+    height: 18%;
+    width: 70%;
+    background-color: #dcdcdc; /* Cor de fundo da div (cinza claro) */
+    border: 10px solid transparent; /* Define uma borda transparente */
+    border-image: linear-gradient(45deg, #dcdcdc, #000000) 1; /* Degradê de cinza claro para preto nas bordas */
+    padding: 10px;
+    align-items: center;
+}
+
+.container-titulo h1{
+    margin: auto;
+    font-size: 45px;  
+    
+}
+
+.logo{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.1;
+}
+
+
+h2{
+    font-size: 30px;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+.inform{
+    width: 100%;
+    
+    
+}
+ 
+.descrition p{
+    margin-top: 1%;
+    margin-left: 3%;
+    width: 50%;
+    font-size: 17px;
+    text-align: justify;
+}
+
+.descrition span{
+    font-weight: bold;
+}
+
+@media (max-width: 595px){
+    .container-titulo h1{
+        margin: auto;
+        font-size: 38px;
+}
+
+.logo img{
+    width: 80%;
+    height: 100%;
+}
+
+}
+
+@media (max-width: 530px) {
+
+    .container-titulo{
+        width: 70%;
+        height: 20%;
+    }
+
+    .logo img{
+        width: 70%;
+        height: 100%;
+    }
+
+
+    .container-titulo h1{
+        margin: auto;
+        margin-top: 5%;
+        font-size: 35px;
+        
+    }
+    .descrition p{
+        font-size: 14px;
+        width: 70%;
+        height: 40%;
+    }
+
+    h2{
+        font-size: 23px;
+    }
+
+    .contato{
+        display: flex;
+        margin-right: 15%;
+        gap: 1%;
+    }
+
+}
